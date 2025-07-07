@@ -59,7 +59,8 @@ def control_telescope(pwi4, y, x, FRAME_WIDTH, FRAME_HEIGHT):
         move(pwi4, direction_y, abs(deg_y))
 
 # ========== Camera Initialization ==========
-sdk = r"C:\Users\rotem\OneDrive - mail.tau.ac.il\Uni\Forth Year\simester1\Project\camera\ASI_Camera_SDK\ASI_Camera_SDK\ASI_Windows_SDK_V1.37\ASI SDK\lib\x64\ASICamera2.dll"
+# <<< Replace file path >>>
+sdk = r"path"
 asi.init(sdk)
 num_cameras = asi.get_num_cameras()
 if num_cameras == 0:
@@ -75,7 +76,8 @@ camera.auto_wb()
 camera.set_image_type(asi.ASI_IMG_RAW8)
 
 # ========== YOLO Initialization ==========
-model = YOLO("C:/Users/rotem/OneDrive - mail.tau.ac.il/Uni/Forth Year/simester1/Project/tel1/model_drone.pt")
+# <<< Replace file path >>>
+model = YOLO("path/model_drone.pt")
 
 # ========== Kalman Filter ==========
 kf = cv2.KalmanFilter(6, 2)
