@@ -90,4 +90,4 @@ def process_video(video_path):
 
 
 # <<< Replace file path >>>
-process_video("C:/Users/rotem/OneDrive - mail.tau.ac.il/Uni/Forth Year/simester1/Project/graphs/video4.mp4")
+process_video("path")
